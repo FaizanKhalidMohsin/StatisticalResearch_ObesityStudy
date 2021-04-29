@@ -1,0 +1,31 @@
+---
+title: "Mo Obesity Project"
+author: "Faizan Khalid Mohsin"
+date: "March 4, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+```{r }
+
+library(foreign)
+
+dataset = read.spss("SPSS Faizan.sav", to.data.frame=TRUE)
+
+write.csv(dataset, "mo_dataset_04march2020.csv",row.names = F )
+#?write.csv
+
+```
+
+
+
+```{r pressure, echo=FALSE}
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
